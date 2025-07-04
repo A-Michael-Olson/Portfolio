@@ -1,0 +1,84 @@
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #000;
+    --header-bg: #333;
+    --header-text: #fff;
+    --card-bg: #fff;
+}
+
+body.dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #f4f4f4;
+    --header-bg: #222;
+    --header-text: #66ccff;
+    --card-bg: #2c2c2c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    padding: 20px 0;
+    text-align: center;
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+nav {
+    background: var(--header-bg);
+    padding: 10px;
+    text-align: center;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav a, nav button {
+        color: var(--header-text);
+        background: none;
+        border: none;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+        nav button:hover, nav a:hover {
+            text-decoration: underline;
+        }
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: var(--card-bg);
+    border-radius: 8px;
+}
+
+footer {
+    background: var(--header-bg);
+    color: var(--header-text);
+    text-align: center;
+    padding: 10px 0;
+}
