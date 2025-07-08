@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html#about" class="button">About</a></li>
+            <li><a href="index.html#skills" class="button">Skills</a></li>
+            <li><a href="index.html#projects" class="button">Projects</a></li>
+            <li><button id="theme-toggle" class="button">Enable Dark Mode</button></li>
+        </ul>
+    </nav>
 
+    <div class="banner">
+        <h1>Chess Program</h1>
+    </div>
+
+    <section>
+        <h2>Screenshots</h2>
+        <div class="slider">
+            <button class="slider-btn" id="prevBtn">&#8592;</button>
+            <div class="slider-window">
+                <div class="slider-track">
+                    <figure>
+                        <img src="images/chessScreenshot.png" alt="Compiled Chess Program">
+                        <figcaption>Compiled Program View</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/chessBoardTest.png" alt="Board Tests">
+                        <figcaption>Board Test Results</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/chessTest.png" alt="Move Tests">
+                        <figcaption>Move Test Coverage</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <button class="slider-btn" id="nextBtn">&#8594;</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Features</h2>
+        <ul>
+            <li>Turn-based move validation with rule enforcement</li>
+            <li>Dynamic generation of legal moves for each piece</li>
+            <li>Support for special chess moves (castling, en passant, pawn promotion)</li>
+            <li>Modular class structure with reusable components</li>
+            <li>Fully tested with unit tests for each core class</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Lessons Learned</h2>
+        <ul>
+            <li>How to apply inheritance and polymorphism effectively to reduce duplicate logic</li>
+            <li>The value of test-driven development in keeping a large codebase stable</li>
+            <li>Improved collaboration and version control through partner programming</li>
+            <li>Importance of clean code organization for debugging and future scalability</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>Project Description</h2>
+
+        <p>
+            This C++ project, developed collaboratively with a partner, is a complete recreation of the game of Chess.
+            The program is built using a modular object-oriented design, featuring a <code>Board</code> class,
+            a general <code>Piece</code> class, and specialized subclasses for each unique chess piece.
+        </p>
+
+        <p>
+            A dedicated <code>Move</code> class handles the logic for generating and parsing moves,
+            including converting between internal representations and human-readable formats
+            (e.g., from coordinates and piece data to algebraic notation like <code>e4</code>, and vice versa).
+        </p>
+
+        <p>
+            The <code>Position</code> class supports multiple ways of representing a piece's location,
+            such as (row, column), a single index (0–63), algebraic notation (<code>A4</code>, <code>E7</code>),
+            and even screen pixel coordinates — making it highly flexible and adaptable to future GUI integration.
+        </p>
+
+        <p>
+            All components were developed using test-driven development.
+            Every method and class was explicitly tested to ensure correctness.
+            The game fully supports standard chess rules along with special mechanics such as
+            <strong>en passant</strong>, <strong>castling</strong>, and <strong>pawn promotion</strong>,
+            with logic to verify prerequisites before enabling these moves.
+        </p>
+
+        <p><em>This project was completed in Winter 2025 as part of an advanced C++ course using TDD methodology.</em></p>
+    </section>
+
+    <div style="padding: 1em;">
+        <a href="index.html"><button class="button">Return to Portfolio</button></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
