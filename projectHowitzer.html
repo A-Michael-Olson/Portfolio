@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Howitzer Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html#about" class="button">About</a></li>
+            <li><a href="index.html#skills" class="button">Skills</a></li>
+            <li><a href="index.html#projects" class="button">Projects</a></li>
+            <li><button id="theme-toggle" class="button">Enable Dark Mode</button></li>
+        </ul>
+    </nav>
 
+    <div class="banner">
+        <h1>Howitzer Simulator</h1>
+    </div>
+
+    <section>
+        <h2>Screenshots</h2>
+        <div class="slider">
+            <button class="slider-btn" id="prevBtn">&#8592;</button>
+            <div class="slider-window">
+                <div class="slider-track">
+                    <figure>
+                        <img src="images/howitzerScreenshot.png" alt="Howitzer Simulation Output">
+                        <figcaption>Projectile Trajectory Visualization</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/howitzerPhysics.png" alt="Physics Class Tests">
+                        <figcaption>Physics Unit Tests</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/howitzerProjectile.png" alt="Projectile Class Tests">
+                        <figcaption>Projectile Unit Tests</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <button class="slider-btn" id="nextBtn">&#8594;</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Features</h2>
+        <ul>
+            <li>Accurate gravity model that adjusts based on altitude</li>
+            <li>Real-time calculation of projectile trajectory and impact</li>
+            <li>Encapsulated classes for Howitzer, Projectile, and Physics</li>
+            <li>Modular, abstract architecture for extensibility and clarity</li>
+            <li>Test-driven development ensures reliable behavior throughout</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Lessons Learned</h2>
+        <ul>
+            <li>The importance of abstraction for creating testable, modular systems</li>
+            <li>Collaborative development through pair programming and Git version control</li>
+            <li>Refining physics for realism and computational efficiency</li>
+            <li>Balancing fidelity with simplicity to ensure maintainability</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Project Description</h2>
+
+        <p>
+            This C++ simulation models the trajectory of a projectile launched from a howitzer. 
+            Built as a collaborative partner project, it leverages real-world physics and object-oriented design 
+            to calculate and visualize artillery motion with high fidelity.
+        </p>
+
+        <p>
+            The <code>Physics</code> class dynamically adjusts gravitational acceleration based on the projectile’s altitude, 
+            simulating how gravity weakens at higher elevations. The <code>Projectile</code> class handles the core 
+            motion calculations, applying velocity updates over time. The <code>Howitzer</code> class encapsulates 
+            initial launch logic such as angle, velocity, and position.
+        </p>
+
+        <p>
+            The simulation is designed to be <strong>abstract</strong>, <strong>robust</strong>, and <strong>maintainable</strong>. 
+            Special attention was paid to keeping modules isolated, testable, and logically cohesive. 
+            We used test-driven development (TDD) throughout the project to validate components, improve stability, and 
+            ensure future-proof extensibility.
+        </p>
+
+        <p>
+            The program was developed in C++ using modern programming principles. Its modular design supports future 
+            upgrades such as air resistance, terrain interaction, or visual GUIs.
+        </p>
+
+        <p><em>This project was completed in Fall 2025 in an advanced C++ course using TDD methodology and collaboration.</em></p>
+    </section>
+
+    <div style="padding: 1em;">
+        <a href="index.html"><button class="button">Return to Portfolio</button></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
