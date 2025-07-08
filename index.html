@@ -9,44 +9,62 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><button id="theme-toggle">Toggle Theme</button></li>
+            <li><a href="#about" class="button">About</a></li>
+            <li><a href="#skills" class="button">Skills</a></li>
+            <li><a href="#projects" class="button">Projects</a></li>
+            <li><button id="theme-toggle" class="button">Enable Dark Mode</button></li>
         </ul>
     </nav>
 
-    <header>
+    <div class="banner">
         <h1>Anthony Michael Olson</h1>
-    </header>
+    </div>
 
     <section id="about">
         <h2>About Me</h2>
-        <p><!-- Your about me content goes here --></p>
+        <div class="about-wrapper">
+            <img src="images/Profile.jpg" alt="Anthony Michael Olson" class="about-photo">
+            <div class="about-text">
+                <p>
+                    I am a Software Engineering senior at BYU-I looking to use my experience in Python,
+                    C++, and problem-solving. Great communication and interpersonal skills allow me to excel
+                    in collaborative environments. A detail oriented approach to design and problem solving
+                    help me to efficiently develop solutions and avoid redundancy within projects. I learn
+                    quickly, and, given time, can learn to proficiently code in any language. I'm eager to
+                    apply theoretical knowledge to real-world challenges while expanding my technical
+                    capabilities.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <!-- List your skills here -->
+            <li>C++ & Python</li>
+            <li>Effective Communication</li>
+            <li>Effective Teamwork</li>
+            <li>Problem Solving</li>
+            <li>Leadership Skills</li>
+            <li>Fast Learner</li>
+            <li>Ability to work under pressure</li>
         </ul>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <!-- Example project link -->
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-        </ul>
+        <div>
+            <a href="projectChess.html" class="button">Chess Program</a>
+            <a href="projectHowitzer.html" class="button">Howitzer Simulator</a>
+        </div>
     </section>
 
     <footer>
         <p>
             Contact me:
-            <a href="#">LinkedIn</a> |
-            <a href="#">GitHub</a> |
-            <a href="mailto:your@email.com">Email</a>
+            <a href="https://www.linkedin.com/in/amichael-olson-5983b82b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a> |
+            <a href="mailto:anthonymolson@hotmail.com" target="_blank" rel="noopener noreferrer">Email</a>
         </p>
     </footer>
 
