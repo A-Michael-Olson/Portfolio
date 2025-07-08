@@ -37,10 +37,10 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
 
 /* ========================
    Navigation Bar
@@ -51,34 +51,34 @@ nav {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    align-items: center;
-}
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+    }
 
-nav li {
-    display: flex;
-    align-items: center;
-}
+    nav li {
+        display: flex;
+        align-items: center;
+    }
 
-nav a, nav button {
-    color: var(--header-text);
-    background: none;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
-    text-decoration: none;
-}
+    nav a, nav button {
+        color: var(--header-text);
+        background: none;
+        border: none;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
 
-nav button:hover, nav a:hover {
-    text-decoration: underline;
-}
+        nav button:hover, nav a:hover {
+            text-decoration: underline;
+        }
 
 /* ========================
    Sections & Footer
@@ -112,19 +112,19 @@ footer {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.button:hover {
-    background-color: #55bbdd;
-    transform: scale(1.05);
-}
+    .button:hover {
+        background-color: #55bbdd;
+        transform: scale(1.05);
+    }
 
 body.dark-mode .button {
     background-color: #444;
     color: #fff;
 }
 
-body.dark-mode .button:hover {
-    background-color: #666;
-}
+    body.dark-mode .button:hover {
+        background-color: #666;
+    }
 
 /* ========================
    About Section
@@ -133,11 +133,11 @@ body.dark-mode .button:hover {
     overflow: auto;
 }
 
-.about-wrapper::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+    .about-wrapper::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
 .about-photo {
     float: left;
@@ -162,14 +162,14 @@ body.dark-mode .button:hover {
     margin-bottom: 1em;
 }
 
-.banner h1 {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 2em;
-    margin: 0;
-}
+    .banner h1 {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 2em;
+        margin: 0;
+    }
 
 /* ========================
    Image Slider
@@ -181,10 +181,12 @@ body.dark-mode .button:hover {
     gap: 1em;
     overflow: hidden;
     margin-bottom: 1em;
+    position: relative;
 }
 
 .slider-window {
     width: 80%;
+    max-width: 900px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
@@ -195,25 +197,27 @@ body.dark-mode .button:hover {
     transition: transform 0.5s ease;
 }
 
-.slider-track figure {
-    min-width: 100%;
-    margin: 0;
-    text-align: center;
-}
+    .slider-track figure {
+        min-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
 
-.slider-track img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px 8px 0 0;
-}
+    .slider-track img {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+        display: block;
+        border-radius: 8px 8px 0 0;
+    }
 
-.slider-track figcaption {
-    padding: 0.5em;
-    background-color: var(--card-bg);
-    color: var(--text-color);
-    border-radius: 0 0 8px 8px;
-}
+    .slider-track figcaption {
+        padding: 0.5em;
+        background-color: var(--card-bg);
+        color: var(--text-color);
+        border-radius: 0 0 8px 8px;
+    }
 
 .slider-btn {
     background-color: var(--header-bg);
@@ -224,6 +228,17 @@ body.dark-mode .button:hover {
     font-size: 1.5em;
     border-radius: 50%;
     transition: background-color 0.3s ease;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
 }
 
 .slider-btn:hover {
@@ -234,48 +249,48 @@ body.dark-mode .button:hover {
    Responsive Design
    ======================== */
 @media (max-width: 768px) {
-  #projects div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    #projects div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  #projects .button {
-    width: 80%;
-    margin: 0.5em 0;
-  }
+    #projects .button {
+        width: 80%;
+        margin: 0.5em 0;
+    }
 
-  .slider-window {
-    width: 95%;
-  }
+    .slider-window {
+        width: 95%;
+        max-width: 100%;
+    }
 
-  .slider-track img {
-    width: 100%;
-    height: auto;
-  }
+    .slider-track img {
+        max-height: 300px;
+    }
 
-  .slider-btn {
-    font-size: 1.2em;
-    padding: 0.4em 0.8em;
-  }
+    .slider-btn {
+        font-size: 1.2em;
+        padding: 0.4em 0.8em;
+    }
 }
 
 @media (max-width: 480px) {
-  .slider-btn {
-    display: none;
-  }
+    .slider-btn {
+        display: none;
+    }
 
-  .banner h1 {
-    font-size: 1.5em;
-    padding: 0.5em 1em;
-  }
+    .banner h1 {
+        font-size: 1.5em;
+        padding: 0.5em 1em;
+    }
 
-  section {
-    padding: 10px;
-    margin: 10px;
-  }
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
 
-  body {
-    font-size: 16px;
-  }
+    body {
+        font-size: 16px;
+    }
 }
