@@ -175,6 +175,7 @@ body.dark-mode .button:hover {
    Image Slider
    ======================== */
 .slider {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,6 +225,7 @@ body.dark-mode .button:hover {
     font-size: 1.5em;
     border-radius: 50%;
     transition: background-color 0.3s ease;
+    z-index: 10;
 }
 
 .slider-btn:hover {
@@ -259,11 +261,10 @@ body.dark-mode .button:hover {
     padding: 0.4em 0.8em;
   }
 
-  /* Mobile Banner Resize Fix */
   .banner {
-    height: 150px; /* smaller height for mobile */
+    height: 150px;
     background-size: cover;
-    background-position: center;
+    background-position: left;
   }
 
   .banner h1 {
@@ -278,7 +279,7 @@ body.dark-mode .button:hover {
   }
 
   .banner h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0.5em 1em;
   }
 
