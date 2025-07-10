@@ -275,7 +275,22 @@ body.dark-mode .button:hover {
 
 @media (max-width: 480px) {
   .slider-btn {
-    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+    padding: 0.3em 0.6em;
+    z-index: 5;
+    color: white;
+  }
+
+  #prevBtn {
+    left: 5px;
+  }
+
+  #nextBtn {
+    right: 5px;
   }
 
   .banner h1 {
@@ -292,3 +307,4 @@ body.dark-mode .button:hover {
     font-size: 16px;
   }
 }
+
